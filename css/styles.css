@@ -8,9 +8,16 @@
   --color-main: #212121;
   --color-back: #757575;
   --color-white: #fff;
+  --color-footer__link: rgba(255, 255, 255, 0.6);
+  --color-logo-black: #000;
   --hover-color: #2196f3;
   --bg-color-main: #fff;
   --bg-color-back: #2f303a;
+  --bg-color-crew: #f5f4fa;
+  --border-color-img: #000;
+  --border-color-item: #eee;
+  --border-color-header: #ececec;
+  --filter-color: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -25,7 +32,7 @@ body {
 /* HEADER styles */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color-header);
 }
 .logo {
   color: var(--hover-color);
@@ -38,7 +45,7 @@ body {
   text-decoration: none;
 }
 .logo .logo__span {
-  color: #000;
+  color: var(--color-logo-black);
 }
 
 .menu__link {
@@ -46,6 +53,9 @@ body {
   font-weight: var(--f-weight-nav);
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.is_active {
+  color: var(--hover-color);
 }
 .menu__link:hover,
 .menu__link:focus {
@@ -88,7 +98,7 @@ body {
   border: 0px;
   border-radius: 4px;
   background-color: var(--hover-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px var(--filter-color));
   cursor: pointer;
 }
 
@@ -119,14 +129,14 @@ body {
   letter-spacing: 0.03em;
 }
 .job__img {
-  border: 1px solid #000000;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid var(--border-color-img);
+  filter: drop-shadow(0px 4px 4px var(--filter-color));
 }
 
 /*  CREW list*/
 
 .crew {
-  background-color: #f5f4fa;
+  background-color: var(--bg-color-crew);
 }
 
 .crew__title {
@@ -137,7 +147,7 @@ body {
 }
 
 .crew__item {
-  background: #ffffff;
+  background: var(--bg-color-list-item);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -171,7 +181,7 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #f5f4fa;
+  background: var(--bg-color-crew);
   border: 0px;
   border-radius: 4px;
   cursor: pointer;
@@ -179,11 +189,11 @@ body {
 .btn__btn:hover,
 .btn__btn:focus {
   background-color: var(--hover-color);
+  color: var(--color-white);
 }
 
 .portfolio__item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color-item);
 }
 
 .portfolio__subtitle {
@@ -214,8 +224,8 @@ body {
 }
 
 .footer__link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: var(--f-style-main);
+  color: var(--color-footer__link);
+  font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
