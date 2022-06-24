@@ -1,13 +1,10 @@
 :root {
   --fs-main: 14px;
   --fs-back: 16px;
-  --lh-main: 16px;
-  --f-style-main: normal;
-  --f-weight-main: 400;
+  --lh-main: 1.2;
   --f-weight-nav: 500;
   --f-weight-title: 700;
   --f-family-main: "Roboto", Arial, Helvetica, sans-serif;
-  /* --f-family-back: ; */
   --color-main: #212121;
   --color-back: #757575;
   --color-white: #fff;
@@ -19,8 +16,6 @@
 body {
   font-size: var(--fs-main);
   line-height: var(--lh-main);
-  font-style: var(--f-style-main);
-  font-weight: var(--f-weight-main);
   font-family: var(--f-family-main);
   color: var(--color-main);
   background-color: var(--bg-color-main);
@@ -38,7 +33,7 @@ body {
   font-style: var(--f-style-main);
   font-weight: var(--f-weight-title);
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -48,11 +43,7 @@ body {
 
 .menu__link {
   color: var(--color-main);
-  /* font-family: var(--f-family-main); */
-  font-style: var(--f-style-main);
   font-weight: var(--f-weight-nav);
-  font-size: var(--fs-main);
-  line-height: var(--lh-main);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -63,11 +54,7 @@ body {
 
 .contacts__link {
   color: var(--color-back);
-  /* font-family: var(--f-family-main); */
-  font-style: var(--f-style-main);
   font-weight: var(--f-weight-nav);
-  font-size: var(--fs-main);
-  line-height: var(--lh-main);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -87,19 +74,22 @@ body {
   color: var(--color-white);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .hero__btn {
   color: var(--color-white);
+  font-family: var(--f-family-main);
   font-weight: var(--f-weight-title);
   font-size: var(--fs-back);
-  line-height: 30px;
+  line-height: 1.9;
   border: 0px;
   border-radius: 4px;
   background-color: var(--hover-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
 
 /* DESC section */
@@ -115,7 +105,7 @@ body {
   text-transform: uppercase;
 }
 .desc__content {
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-back);
 }
@@ -125,7 +115,7 @@ body {
 .job__title {
   font-weight: var(--f-weight-title);
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 .job__img {
@@ -138,10 +128,11 @@ body {
 .crew {
   background-color: #f5f4fa;
 }
+
 .crew__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -155,12 +146,12 @@ body {
 .crew__subtitle {
   font-weight: var(--f-weight-nav);
   font-size: var(--fs-back);
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 .crew__rank {
   font-size: var(--fs-back);
-  line-height: 19px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-back);
 }
@@ -177,12 +168,13 @@ body {
   font-family: var(--f-family-main);
   font-weight: var(--f-weight-nav);
   font-size: var(--fs-back);
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   background: #f5f4fa;
   border: 0px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .btn__btn:hover,
 .btn__btn:focus {
@@ -197,13 +189,13 @@ body {
 .portfolio__subtitle {
   font-weight: var(--f-weight-title);
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio__desc {
   color: var(--color-back);
   font-size: var(--fs-back);
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
@@ -217,13 +209,14 @@ body {
   color: var(--color-white);
 }
 
+.footer__list {
+  margin: 0;
+}
+
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
-  /* font-family: var(--f-family-main); */
   font-style: var(--f-style-main);
-  font-weight: var(--f-weight-main);
-  font-size: var(--fs-main);
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
