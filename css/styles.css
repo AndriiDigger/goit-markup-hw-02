@@ -29,6 +29,9 @@ body {
   margin: 0;
 }
 
+.list {
+  list-style: none;
+}
 /* HEADER styles */
 
 .header {
@@ -75,6 +78,12 @@ body {
 
 /* STUDIO PAGE STYLES */
 
+.section-title {
+  font-weight: var(--f-weight-title);
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
 /*HERO styles */
 
 .hero {
@@ -122,12 +131,6 @@ body {
 
 /* JOB section */
 
-.job__title {
-  font-weight: var(--f-weight-title);
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
 .job__img {
   border: 1px solid var(--border-color-img);
   filter: drop-shadow(0px 4px 4px var(--filter-color));
@@ -137,13 +140,6 @@ body {
 
 .crew {
   background-color: var(--bg-color-crew);
-}
-
-.crew__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
 .crew__item {
@@ -188,6 +184,10 @@ body {
 }
 .btn__btn:hover,
 .btn__btn:focus {
+  background-color: var(--hover-color);
+  color: var(--color-white);
+}
+.btn__active {
   background-color: var(--hover-color);
   color: var(--color-white);
 }
