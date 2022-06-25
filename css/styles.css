@@ -5,6 +5,7 @@
   --f-weight-nav: 500;
   --f-weight-title: 700;
   --f-family-main: "Roboto", Arial, Helvetica, sans-serif;
+  --ls-size: 0.03em;
   --color-main: #212121;
   --color-back: #757575;
   --color-white: #fff;
@@ -26,6 +27,7 @@ body {
   font-family: var(--f-family-main);
   color: var(--color-main);
   background-color: var(--bg-color-main);
+  letter-spacing: var(--ls-size);
   margin: 0;
 }
 
@@ -44,7 +46,6 @@ body {
   font-weight: var(--f-weight-title);
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .logo .logo__span {
@@ -82,7 +83,6 @@ body {
   font-weight: var(--f-weight-title);
   font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 /*HERO styles */
 
@@ -120,12 +120,10 @@ body {
 .desc__subtitle {
   font-weight: var(--f-weight-title);
   font-size: var(--fs-main);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .desc__content {
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: var(--color-back);
 }
 
@@ -153,12 +151,10 @@ body {
   font-weight: var(--f-weight-nav);
   font-size: var(--fs-back);
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .crew__rank {
   font-size: var(--fs-back);
   line-height: 1.2;
-  letter-spacing: 0.03em;
   color: var(--color-back);
 }
 
@@ -176,7 +172,7 @@ body {
   font-size: var(--fs-back);
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--ls-size);
   background: var(--bg-color-crew);
   border: 0px;
   border-radius: 4px;
@@ -206,7 +202,6 @@ body {
   color: var(--color-back);
   font-size: var(--fs-back);
   line-height: 1.9;
-  letter-spacing: 0.03em;
 }
 
 /* FOOTER STYLES */
@@ -227,10 +222,9 @@ body {
   color: var(--color-footer__link);
   font-style: normal;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .footer__link:hover,
 .footer__link:focus {
-  color: var(--color-white);
+  color: var(--hover-color);
 }
