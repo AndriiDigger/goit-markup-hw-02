@@ -228,3 +228,7 @@ body {
 .footer__link:focus {
   color: var(--hover-color);
 }
+
+.white-link {
+  color: var(--color-white);
+}
