@@ -12,6 +12,7 @@
   --color-footer__link: rgba(255, 255, 255, 0.6);
   --color-logo-black: #000;
   --hover-color: #2196f3;
+  --hover-hero__btn: #188ce8;
   --bg-color-main: #fff;
   --bg-color-back: #2f303a;
   --bg-color-crew: #f5f4fa;
@@ -58,23 +59,12 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.is_active {
-  color: var(--hover-color);
-}
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--hover-color);
-}
 
 .contacts__link {
   color: var(--color-back);
   font-weight: var(--f-weight-nav);
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--hover-color);
 }
 
 /* STUDIO PAGE STYLES */
@@ -104,17 +94,25 @@ body {
   font-weight: var(--f-weight-title);
   font-size: var(--fs-back);
   line-height: 1.9;
+  letter-spacing: 0.06em;
   border: 0px;
   border-radius: 4px;
   background-color: var(--hover-color);
   filter: drop-shadow(0px 4px 4px var(--filter-color));
   cursor: pointer;
 }
+.hero__btn:hover,
+.hero__btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--hover-hero__btn);
+}
 
 /* DESC section */
 
-.desc__title {
-  display: none;
+.visually-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
 }
 
 .desc__subtitle {
@@ -141,7 +139,7 @@ body {
 }
 
 .crew__item {
-  background: var(--bg-color-list-item);
+  background: var(--bg-color-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -180,11 +178,11 @@ body {
 }
 .btn__btn:hover,
 .btn__btn:focus {
-  background-color: var(--hover-color);
   color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn__active {
-  background-color: var(--hover-color);
   color: var(--color-white);
 }
 
@@ -224,11 +222,22 @@ body {
   line-height: 1.7;
   text-decoration: none;
 }
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--hover-color);
-}
 
 .white-link {
   color: var(--color-white);
+}
+
+/* hover,focus styles */
+
+.is_active,
+.menu__link:hover,
+.menu__link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
+.btn__btn:hover,
+.btn__btn:focus,
+.btn__active,
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--hover-color);
 }

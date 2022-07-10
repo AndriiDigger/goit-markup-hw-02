@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 1</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -26,7 +27,9 @@
           <li class="menu__item">
             <a class="menu__link" href="portfolio.html">Портфолио</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <ul class="contacts list">
@@ -53,7 +56,7 @@
       <!-- Преимущества компании -->
       <section class="desc">
         <!-- Заголовок спрячется при добавлении стилей-->
-        <h2 class="desc__title">Преимущества компании</h2>
+        <h2 class="visually-hidden">Преимущества компании</h2>
 
         <ul class="desc__list list">
           <li class="desc__item">
@@ -167,14 +170,17 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <a href="./index.html" class="logo"> Web<span class="logo__span">Studio</span> </a>
+      <a href="./index.html" class="logo">
+        Web<span class="logo__span">Studio</span>
+      </a>
       <address class="footer__addr">
         <ul class="footer__list list">
           <li class="footer__item">
             <a
               class="footer__link white-link"
               href="https://goo.gl/maps/4EyUpNPc1M4XpFM67"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
