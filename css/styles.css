@@ -178,11 +178,13 @@ body {
 }
 .btn__btn:hover,
 .btn__btn:focus {
+  background-color: var(--hover-color);
   color: var(--color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn__active {
+  background-color: var(--hover-color);
   color: var(--color-white);
 }
 
@@ -191,6 +193,7 @@ body {
 }
 
 .portfolio__subtitle {
+  color: var(--color-main);
   font-weight: var(--f-weight-title);
   font-size: 18px;
   line-height: 2;
@@ -234,9 +237,6 @@ body {
 .menu__link:focus,
 .contacts__link:hover,
 .contacts__link:focus,
-.btn__btn:hover,
-.btn__btn:focus,
-.btn__active,
 .footer__link:hover,
 .footer__link:focus {
   color: var(--hover-color);
